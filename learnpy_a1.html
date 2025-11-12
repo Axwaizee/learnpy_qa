@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Answers</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #222; }
+    h1, h2 { color: #2c3e50; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    h2 { margin-top: 30px; }
+    .question-number { font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Python Answers</h1>
+
+  <h2>Basic Print & Input</h2>
+  <div class="question-number">1.</div>
+  <pre><code>print("My name is Alex")</code></pre>
+
+  <div class="question-number">2.</div>
+  <pre><code>color = input("What is your favorite color? ")
+print("Your favorite color is", color)</code></pre>
+
+  <div class="question-number">3.</div>
+  <pre><code>print("Line one\nLine two\nLine three")</code></pre>
+
+  <div class="question-number">4.</div>
+  <pre><code>name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello", name + ", you are", age, "years old.")</code></pre>
+
+  <div class="question-number">5.</div>
+  <pre><code>a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("The sum is", a + b)</code></pre>
+
+  <h2>Strings</h2>
+  <div class="question-number">6.</div>
+  <pre><code>word = input("Enter a word: ")
+print(word.upper())</code></pre>
+
+  <div class="question-number">7.</div>
+  <pre><code>sentence = input("Enter a sentence: ")
+print("It has", len(sentence), "characters.")</code></pre>
+
+  <div class="question-number">8.</div>
+  <pre><code>first = input("Enter first name: ")
+last = input("Enter last name: ")
+print("Reversed:", last, first)</code></pre>
+
+  <div class="question-number">9.</div>
+  <pre><code>sentence = input("Enter a sentence: ")
+print("First five characters:", sentence[:5])</code></pre>
+
+  <div class="question-number">10.</div>
+  <pre><code>name = input("Enter your name: ")
+if "a" in name.lower():
+    print("Your name contains 'a'")
+else:
+    print("No 'a' in your name")</code></pre>
+
+  <h2>Numbers & Basic Operations</h2>
+  <div class="question-number">11.</div>
+  <pre><code>a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum:", a + b)
+print("Difference:", a - b)
+print("Product:", a * b)</code></pre>
+
+  <div class="question-number">12.</div>
+  <pre><code>n = int(input("Enter a number: "))
+print("Double is", n * 2)</code></pre>
+
+  <div class="question-number">13.</div>
+  <pre><code>num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")</code></pre>
+
+  <div class="question-number">14.</div>
+  <pre><code>num = int(input("Enter a number: "))
+print("Square is", num ** 2)</code></pre>
+
+  <div class="question-number">15.</div>
+  <pre><code>a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a > b:
+    print(a, "is bigger")
+else:
+    print(b, "is bigger")</code></pre>
+
+  <h2>If / Else Statements</h2>
+  <div class="question-number">16.</div>
+  <pre><code>age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")</code></pre>
+
+  <div class="question-number">17.</div>
+  <pre><code>password = input("Enter password: ")
+if password == "python123":
+    print("Access granted")
+else:
+    print("Access denied")</code></pre>
+
+  <div class="question-number">18.</div>
+  <pre><code>temp = int(input("Enter temperature: "))
+if temp > 30:
+    print("It's hot")
+elif temp < 10:
+    print("It's cold")
+else:
+    print("It's moderate")</code></pre>
+
+  <div class="question-number">19.</div>
+  <pre><code>grade = input("Enter your grade (A-F): ")
+if grade == "A":
+    print("Excellent!")
+elif grade == "B":
+    print("Good job!")
+elif grade == "C":
+    print("Keep improving!")
+else:
+    print("Try harder next time.")</code></pre>
+
+  <div class="question-number">20.</div>
+  <pre><code>rain = input("Is it raining? (yes/no): ")
+if rain.lower() == "yes":
+    print("Take an umbrella!")
+else:
+    print("No umbrella needed.")</code></pre>
+
+  <h2>Loops</h2>
+  <div class="question-number">21.</div>
+  <pre><code>for i in range(1, 11):
+    print(i)</code></pre>
+
+  <div class="question-number">22.</div>
+  <pre><code>n = int(input("Enter a number: "))
+for i in range(1, n + 1):
+    print(i)</code></pre>
+
+  <div class="question-number">23.</div>
+  <pre><code>word = input("Enter a word: ")
+for letter in word:
+    print(letter)</code></pre>
+
+  <div class="question-number">24.</div>
+  <pre><code>password = ""
+while password != "python":
+    password = input("Enter password: ")
+print("Correct password!")</code></pre>
+
+  <div class="question-number">25.</div>
+  <pre><code>for i in range(5):
+    print("Python")</code></pre>
+
+  <h2>Lists</h2>
+  <div class="question-number">26.</div>
+  <pre><code>fruits = ["apple", "banana", "cherry", "mango", "grape"]
+for f in fruits:
+    print(f)</code></pre>
+
+  <div class="question-number">27.</div>
+  <pre><code>movies = []
+for i in range(3):
+    movie = input("Enter a favorite movie: ")
+    movies.append(movie)
+print("Your movies:", movies)</code></pre>
+
+  <div class="question-number">28.</div>
+  <pre><code>numbers = [1, 2, 3, 4, 5, 6]
+for n in numbers:
+    if n % 2 == 0:
+        print(n)</code></pre>
+
+  <div class="question-number">29.</div>
+  <pre><code>fruits = ["apple", "banana", "cherry"]
+new = input("Enter a fruit to add: ")
+fruits.append(new)
+print("Updated list:", fruits)</code></pre>
+
+  <div class="question-number">30.</div>
+  <pre><code>fruits = ["apple", "banana", "mango"]
+check = input("Enter a fruit name: ")
+if check in fruits:
+    print("Yes, it's in the list")
+else:
+    print("No, it's not there")</code></pre>
+
+  <h2>Functions</h2>
+  <div class="question-number">31.</div>
+  <pre><code>def say_hello():
+    print("Hello!")
+
+say_hello()</code></pre>
+
+  <div class="question-number">32.</div>
+  <pre><code>def greet(name):
+    print("Hello,", name)
+
+greet("Sam")</code></pre>
+
+  <div class="question-number">33.</div>
+  <pre><code>def add(a, b):
+    return a + b
+
+print(add(5, 3))</code></pre>
+
+  <div class="question-number">34.</div>
+  <pre><code>def is_even(num):
+    return num % 2 == 0
+
+print(is_even(4))</code></pre>
+
+  <div class="question-number">35.</div>
+  <pre><code>def word_length(word):
+    print("Length is", len(word))
+
+word_length("Python")</code></pre>
+
+  <h2>Bonus</h2>
+  <div class="question-number">36.</div>
+  <pre><code>year = int(input("Enter your birth year: "))
+age = 2025 - year
+print("You are", age, "years old.")</code></pre>
+
+  <div class="question-number">37.</div>
+  <pre><code>a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+op = input("Enter operator (+, -, *, /): ")
+
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    print(a / b)
+else:
+    print("Invalid operator")</code></pre>
+
+  <div class="question-number">38.</div>
+  <pre><code>names = []
+for i in range(5):
+    name = input("Enter a name: ")
+    names.append(name)
+names.sort()
+print("Sorted names:", names)</code></pre>
+
+  <div class="question-number">39.</div>
+  <pre><code>sentence = input("Enter a sentence: ")
+word = input("Enter a word to count: ")
+count = sentence.lower().split().count(word.lower())
+print("The word appears", count, "times.")</code></pre>
+
+  <div class="question-number">40.</div>
+  <pre><code>import random
+secret = random.randint(1, 10)
+guess = 0
+while guess != secret:
+    guess = int(input("Guess a number (1-10): "))
+    if guess < secret:
+        print("Too low!")
+    elif guess > secret:
+        print("Too high!")
+print("You got it!")</code></pre>
+
+</body>
+</html>
